@@ -30,6 +30,10 @@ function indexInitialization()
     usageXHR = new XMLHttpRequest();
     infoXHR = new XMLHttpRequest();
 
+    let serverName = html.getAttribute("server-name");
+    let serverNameLabel = document.getElementById("server-name-label");
+    serverNameLabel.innerHTML = serverName.toUpperCase();
+
     sendUsageRequest();
 
     setInterval(function()
