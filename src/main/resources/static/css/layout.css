@@ -358,6 +358,34 @@ body
     display: none;
 }
 
+.widget-mode 
+{
+    position: relative;
+    top: var(--top-widget-mode);
+    left: var(--left-widget-mode);
+    color: var(--color-widget-mode);
+    font-size: var(--font-size-14pt);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.5rem;
+}
+
+.widget-mode label 
+{
+    user-select: none;
+}
+
+#widget-mode-switch:checked~.custom-control-label::before
+{
+    border-color: var(--background-form-squares-grid-third);
+    background-color: var(--background-form-squares-grid-third);
+    box-shadow: var(--box-shadow-submit) var(--black-opacity-10);
+}
+
+#widget-mode-switch:checked~.custom-control-label::after 
+{
+    background-color: var(--color-widget-mode);
+}
+
 .submit
 {
     position: absolute;

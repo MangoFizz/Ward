@@ -27,6 +27,7 @@
     --top-theme-buttons-input: 1.938rem;
     --top-button-squares-grid: 0.222rem;
     --top-port: 2.750rem;
+    --top-widget-mode: 4.350rem;
     --top-header: 1.500rem;
     --top-label-hw-info: 0.562rem;
     --top-card-body-squares-grid: 0.813rem;
@@ -68,6 +69,7 @@
     --left-button-squares-grid-second: 19.688rem;
     --left-theme-buttons-first: 1.500rem;
     --left-port: 1.500rem;
+    --left-widget-mode: 1.500rem;
     --left-submit: 6.563rem;
     --left-header: 1.500rem;
     --left-label-hw-info: 4.375rem;
@@ -116,12 +118,12 @@
 
     /* height */
     --height-body: 100%;
-    --height-setup: 26.706rem;
-    --height-setup-div: 26.706rem;
+    --height-setup: 28.706rem;
+    --height-setup-div: 28.706rem;
     --height-clouds: 8.281rem;
     --height-clouds-img: 5.438rem;
     --height-background: 8.281rem;
-    --height-form: 18.425rem;
+    --height-form: 20.425rem;
     --height-form-squares-grid-div: 0.625rem;
     --height-main-settings: 1.875rem;
     --height-main-settings-underline: 0.313rem;

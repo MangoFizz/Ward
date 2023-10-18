@@ -28,6 +28,7 @@ html[theme = "light"]
     --color-theme-buttons-input: var(--grey);
     --color-port: var(--grey);
     --color-port-placeholder: var(--grey-light);
+    --color-widget-mode: var(--grey-light);
     --color-submit: var(--grey);
     --color-hw-type: var(--black);
     --color-hw-name: var(--grey);
@@ -113,6 +114,7 @@ html[theme = "dark"]
     --color-theme-buttons-input: var(--grey);
     --color-port: var(--white);
     --color-port-placeholder: var(--white);
+    --color-widget-mode: var(--white);
     --color-submit: var(--white);
     --color-hw-type: var(--white);
     --color-hw-name: var(--grey);
