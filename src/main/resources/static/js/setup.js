@@ -9,6 +9,7 @@ function setupInitialization()
 
     let lightTheme = document.getElementById("light-theme");
     let darkTheme = document.getElementById("dark-theme");
+    let widgetMode = document.getElementById("widget-mode-switch");
     let submit = document.getElementById("submit");
 
     lightThemeSquare = document.getElementById("light-theme-square");
@@ -21,6 +22,7 @@ function setupInitialization()
 
     lightTheme.addEventListener("click", function(event) {changeTheme(event.target || event.srcElement)});
     darkTheme.addEventListener("click", function(event) {changeTheme(event.target || event.srcElement)});
+    widgetMode.addEventListener("change", function() {setWidgetMode(this.checked)});
     submit.addEventListener("click", function(event) {sendSetupRequest(event.target || event.srcElement)});
 }
 
@@ -62,6 +64,19 @@ function changeTheme(element)
             lowlightColor: 0xBCBCBC,
             baseColor: 0xBCBCBC
         });
+    }
+}
+
+/**
+ * Changes widget mode
+ */
+function setWidgetMode(setting) 
+{
+    if(setting) {
+        document.body.classList.add("no-background");
+    }
+    else {
+        document.body.classList.remove("no-background");
     }
 }
 
@@ -117,7 +132,8 @@ function sendSetupRequest()
     {
         "serverName": serverName.value,
         "theme": html.getAttribute("theme"),
-        "port": port.value
+        "port": port.value,
+        "widgetMode": document.querySelector("#widget-mode-switch").checked
     }
 
     if (port.value != 4000)

@@ -44,6 +44,7 @@ public class IndexService
 
         model.addAttribute("info", infoService.getInfo());
         model.addAttribute("theme", utilitiesComponent.getThemeName());
+        model.addAttribute("widgetMode", utilitiesComponent.getWidgetMode());
 
         return "index";
     }

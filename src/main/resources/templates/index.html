@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th = "http://www.thymeleaf.org" id = "html" th:attr = "theme = ${theme}">
+<html xmlns:th = "http://www.thymeleaf.org" id = "html" th:attr = "theme = ${theme}" th:attr = "widget-mode = ${widgetMode}">
     <head>
         <meta charset = "UTF-8">
         <title th:text = "${info.setup.serverName}"></title>
@@ -192,7 +192,7 @@
                         </div>
                         <div class = "pages">
                             <div id = "logo-page" class = "first">
-                                <div class = "logo">WARD</div>
+                                <div class = "logo">${info.setup.serverName}</div>
                                 <div class = "logo-description">SERVER DASHBOARD</div>
                             </div>
                             <div id = "contacts-page" class = "second">

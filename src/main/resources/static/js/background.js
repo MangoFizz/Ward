@@ -5,6 +5,10 @@
  */
 function backgroundInitialization()
 {
+    if(html.getAttribute("widget-mode") == "true") {
+        document.body.classList.add("no-background");
+    }
+
     background = VANTA.FOG({el: "#background", blurFactor: 0.40, zoom: 1.50});
 
     if (html.getAttribute("theme") == "light")

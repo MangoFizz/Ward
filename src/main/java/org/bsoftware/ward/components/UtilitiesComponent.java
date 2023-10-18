@@ -20,7 +20,7 @@ public class UtilitiesComponent
      * @param file ini file
      * @param sectionName section in ini filr
      * @param optionName option in section
-     * @return String wth parsed data
+     * @return String with parsed data
      * @throws IOException if file does not exists
      */
     @SuppressWarnings(value = "MismatchedQueryAndUpdateOfCollection")
@@ -39,11 +39,22 @@ public class UtilitiesComponent
     /**
      * Gets theme name from setup ini file
      *
-     * @return String wth theme name
+     * @return String with theme name
      * @throws IOException if file does not exists
      */
     public String getThemeName() throws IOException
     {
         return getFromIniFile(new File(Ward.SETUP_FILE_PATH), "setup", "theme");
+    }
+
+    /**
+     * Gets widget mode from setup ini file
+     *
+     * @return String with widget mode
+     * @throws IOException if file does not exists
+     */
+    public String getWidgetMode() throws IOException
+    {
+        return getFromIniFile(new File(Ward.SETUP_FILE_PATH), "setup", "widgetMode");
     }
 }

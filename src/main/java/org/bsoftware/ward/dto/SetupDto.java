@@ -41,4 +41,10 @@ public class SetupDto
     @Min(value = 10)
     @Max(value = 65535)
     private String port;
+
+    /**
+     * Widget mode field
+     */
+    @NotNull
+    private boolean widgetMode;
 }

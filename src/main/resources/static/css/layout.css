@@ -26,6 +26,14 @@ body
     background: var(--background-body);
 }
 
+body.no-background {
+    background: none;
+}
+
+body.no-background canvas {
+    display: none;
+}
+
 .logo
 {
     position: absolute;
